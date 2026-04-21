@@ -345,10 +345,10 @@ function App() {
 
               <div className="flex flex-col gap-3 sm:items-start md:items-end">
                 <a
-                  href="mailto:info@lima.se"
+                  href="mailto:info@limatest.se"
                   className="rounded-xl bg-white px-6 py-3 text-sm font-semibold text-black transition hover:-translate-y-0.5"
                 >
-                  info@lima.se
+                  info@limatest.se
                 </a>
                 <p className="text-sm text-slate-400">Svar inom 1 arbetsdag</p>
               </div>
@@ -368,7 +368,7 @@ function App() {
             </div>
             <div>
               <p className="font-semibold text-slate-900">Kontakt</p>
-              <p className="mt-4">info@lima.se</p>
+              <p className="mt-4">info@limatest.se</p>
             </div>
             <div>
               <p className="font-semibold text-slate-900">Produkt</p>
