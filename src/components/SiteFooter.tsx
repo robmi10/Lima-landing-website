@@ -51,7 +51,15 @@ function SiteFooter() {
             <ul className="mt-4 space-y-2">
               <li>
                 <Link to="/resources" className="transition hover:text-slate-900">
-                  Cases
+                  Insights & cases
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/resources/articles/skills-based-hiring"
+                  className="transition hover:text-slate-900"
+                >
+                  Skills-based hiring
                 </Link>
               </li>
               <li>

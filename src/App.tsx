@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import AboutPage from './pages/AboutPage'
+import ArticlePage from './pages/ArticlePage'
 import AssessmentsPage from './pages/AssessmentsPage'
 import CaseFintechPage from './pages/CaseFintechPage'
 import FaqPage from './pages/FaqPage'
@@ -25,6 +26,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/resources" element={<ResourcesPage />} />
+        <Route path="/resources/articles/:slug" element={<ArticlePage />} />
         <Route path="/resources/cases/european-fintech-python-developers" element={<CaseFintechPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>

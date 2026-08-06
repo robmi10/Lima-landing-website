@@ -1,22 +1,25 @@
+import { getArticleCards } from './articles'
 import { caseUrl } from './global'
 import type { PageContent } from './types'
 
-// The copy deck excludes resource hub copy, so this page only lists the approved case.
 export const resourcesContent: PageContent = {
   meta: {
     title: 'Resources | LiMA',
-    description: 'Cases and material from recruitment processes that use LiMA skills assessments.',
+    description:
+      'Hiring insights, case studies and material from recruitment processes that use LiMA skills assessments.',
   },
   hero: {
     eyebrow: 'Resources',
-    headline: 'Cases',
-    text: 'Stories from recruitment processes that used LiMA to add role-relevant skills evidence.',
+    headline: 'Insights and cases',
+    text: 'Articles and stories about skills-based hiring, assessments and clearer recruitment decisions.',
   },
   finalCta: {
     headline: 'Ready to see LiMA in action?',
     text: 'Book a demo and discover how LiMA can add clearer evidence to your hiring process.',
   },
 }
+
+export const articleCards = getArticleCards()
 
 export const caseCards = [
   {
