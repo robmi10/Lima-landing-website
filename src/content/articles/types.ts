@@ -33,5 +33,8 @@ export type ArticleCard = {
   title: string
   dek: string
   date: string
+  readMinutes: number
+  heroImage: string
+  heroAlt: string
   to: string
 }

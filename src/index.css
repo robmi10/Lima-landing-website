@@ -27,3 +27,28 @@ body {
 * {
   box-sizing: border-box;
 }
+
+/* Tailwind 4's preflight sets buttons to cursor:default; restore the pointer
+   on everything interactive so it applies without a class at each call site. */
+@layer base {
+  a[href],
+  button:not(:disabled),
+  summary,
+  label[for],
+  [role='button']:not([aria-disabled='true']) {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  [aria-disabled='true'] {
+    cursor: not-allowed;
+  }
+
+  /* The browser default is a hard blue rectangle that ignores border-radius.
+     Keyboard focus stays obvious, mouse clicks no longer draw a box. */
+  :focus-visible {
+    outline: 2px solid #94a3b8;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}

@@ -31,7 +31,7 @@ function ArticlePage() {
             The link may be outdated. Browse the latest insights on the Resources page.
           </p>
           <Link
-            to="/resources"
+            to="/#resources"
             className="mt-8 inline-block rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:border-slate-300"
           >
             Back to Resources

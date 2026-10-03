@@ -25,7 +25,7 @@ function NotFoundPage() {
             Go to homepage
           </Link>
           <Link
-            to="/platform"
+            to="/#platform"
             className="rounded-xl px-6 py-3 text-sm font-semibold text-slate-600 transition hover:text-slate-950"
           >
             Explore the platform

@@ -1,4 +1,4 @@
-import { demoCta } from '../content/global'
+import { demoCta } from '../content/site'
 import type { FinalCtaContent } from '../content/types'
 
 type Variant = 'light' | 'dark'

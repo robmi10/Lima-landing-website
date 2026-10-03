@@ -1,21 +1,4 @@
-import type { FaqGroup, PageContent } from './types'
-
-export const faqContent: PageContent = {
-  meta: {
-    title: 'LiMA FAQ | Skills Tests, Proctoring & Results',
-    description:
-      'Find answers about LiMA skills assessments, customization, candidate results, proctoring, privacy, pricing and technical support.',
-  },
-  hero: {
-    eyebrow: 'FAQ',
-    headline: 'Questions about LiMA? Start here.',
-    text: 'Learn how the platform, assessments, reporting and proctoring work for employers and candidates.',
-  },
-  finalCta: {
-    headline: 'Still have a question?',
-    text: 'Book a demo or contact us at info@limatest.se.',
-  },
-}
+import type { FaqGroup } from './types'
 
 export const faqGroups: FaqGroup[] = [
   {
@@ -42,14 +25,18 @@ export const faqGroups: FaqGroup[] = [
           'Yes. You can combine competencies, remove, replace or reorder questions and add your own questions or cases.',
       },
       {
-        question: 'Which question types are available?',
-        answer:
-          'LiMA uses knowledge questions, situational questions, numerical questions, coding questions and practical cases.',
-      },
-      {
         question: 'Which languages are available?',
         answer:
           'Assessments are available in English and Swedish, with additional language adaptation possible when required.',
+      },
+      {
+        question: 'Can a candidate retake an assessment?',
+        answer: 'No. Each candidate receives one attempt.',
+      },
+      {
+        question: 'Which question types are available?',
+        answer:
+          'LiMA uses knowledge questions, situational questions, numerical questions, coding questions and practical cases.',
       },
       {
         question: 'How long does an assessment take?',
@@ -59,10 +46,6 @@ export const faqGroups: FaqGroup[] = [
         question: 'What results can the candidate see?',
         answer:
           'After completing the assessment, the candidate can see their total result and result for each assessed skill.',
-      },
-      {
-        question: 'Can a candidate retake an assessment?',
-        answer: 'No. Each candidate receives one attempt.',
       },
     ],
   },
