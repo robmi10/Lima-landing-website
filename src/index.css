@@ -28,6 +28,19 @@ body {
   box-sizing: border-box;
 }
 
+/* The hero mock is a composed picture: its cards are placed in percentages, so
+   their text, spacing and radii scale with its width too (1u = 16px at full size).
+   Without this the cards shrink on phones while their contents don't, and overlap. */
+.hero-mock {
+  --u: calc(100cqw / 36);
+  --spacing: calc(var(--u) / 4);
+  --radius-md: calc(var(--u) * 0.375);
+  --radius-lg: calc(var(--u) * 0.5);
+  --radius-xl: calc(var(--u) * 0.75);
+  --radius-2xl: var(--u);
+  font-size: var(--u);
+}
+
 /* Tailwind 4's preflight sets buttons to cursor:default; restore the pointer
    on everything interactive so it applies without a class at each call site. */
 @layer base {

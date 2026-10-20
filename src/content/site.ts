@@ -39,6 +39,13 @@ export const hero = {
   cta: { label: 'Login / Create Account', href: backofficeUrl },
 }
 
+export const explainer = {
+  eyebrow: 'See LiMA in action',
+  headline: 'From role requirements to a clear candidate report.',
+  src: '/videos/lima-explainer.mp4',
+  label: 'LiMA explainer video',
+}
+
 export const platform = {
   eyebrow: 'Platform',
   headline: 'A clearer path from role requirements to candidate evidence.',

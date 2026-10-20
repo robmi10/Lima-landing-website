@@ -19,7 +19,7 @@ function Layout() {
   }, [pathname, hash])
 
   return (
-    <div id="top" className="flex min-h-screen flex-col bg-[#f2f4f8] text-slate-900">
+    <div id="top" className="flex min-h-screen flex-col overflow-x-clip bg-[#f2f4f8] text-slate-900">
       <div className="sticky top-0 z-30">
         <SiteHeader />
       </div>
